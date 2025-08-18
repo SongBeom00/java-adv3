@@ -80,7 +80,7 @@ public class IntermediateOperationsMain {
         System.out.println("\n");
 
         // 10. dropWhile (Java 9+)
-        System.out.println("10. takeWhile - 5보다 작은 동안만 건너뛰기");
+        System.out.println("10. dropWhile - 5보다 작은 동안만 건너뛰기");
         numbers2.stream()
                 .dropWhile(n -> n < 5) // 5보다 큰 거를 만나면 출력합니다. 5, 1, 2, 3 출력됩니다.
                 .forEach(n -> System.out.print(n + " "));
