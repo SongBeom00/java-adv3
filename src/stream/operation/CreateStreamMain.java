@@ -21,6 +21,7 @@ public class CreateStreamMain {
         Stream<String> stream3 = Stream.of("a", "b", "c");
         stream3.forEach(System.out::println);
 
+        //== iterate, generate는 별도의 종료 조건이 없으면 무한히 데이터를 만들어내는 스트림이다.==
 
         System.out.println("4. 무한 스트림 생성 - iterate()");
         // iterate: 초기값과 다음 값을 만드는 함수를 지정
