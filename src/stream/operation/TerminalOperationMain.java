@@ -97,7 +97,7 @@ public class TerminalOperationMain {
 
         System.out.println("12. allMatch - 모든 요소가 조건을 만족하는지");
         boolean allPositive = numbers.stream()
-                .allMatch(n -> n % 2 == 0);
+                .allMatch(n -> n > 0);
         System.out.println("모든 숫자가 양수인가? " + allPositive);
         System.out.println();
 
