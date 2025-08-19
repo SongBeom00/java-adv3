@@ -25,7 +25,8 @@ public class PrimitiveStreamMain {
         // average(): 평균값 계산
         double avg = IntStream.range(1, 6)
                 .average().
-                getAsDouble();
+                .average()
+                .getAsDouble();
         System.out.println("avg = " + avg);
 
         // summaryStatistics(): 모든 통계 정보
