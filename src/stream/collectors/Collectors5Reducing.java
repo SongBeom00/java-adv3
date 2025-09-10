@@ -13,7 +13,7 @@ public class Collectors5Reducing {
         String joined1 = names.stream()
                 .collect(Collectors.reducing(
                         (s1, s2) -> s1 + ", " + s2
-                )).get();
+                )).orElse("");
         System.out.println("joined1 = " + joined1);
 
         String joined2 = names.stream()
