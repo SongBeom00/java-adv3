@@ -16,7 +16,7 @@ public class DownStreamMain2 {
                 new Student("Han", 2, 90),
                 new Student("Hoon", 3, 90),
                 new Student("Ha", 3, 90)
-                );
+        );
 
         // 1단계 : 학년별로 학생들을 그룹화 해라
         Map<Integer, List<Student>> collect1 = students.stream()
@@ -47,10 +47,10 @@ public class DownStreamMain2 {
                 .collect(Collectors.groupingBy(
                         Student::getGrade,
                         Collectors.collectingAndThen(
-                                        Collectors.maxBy(Comparator.comparingInt(Student::getScore)),
-                                        sOpt -> sOpt.get().getName()
-                                )
-                        ));
+                                Collectors.maxBy(Comparator.comparingInt(Student::getScore)),
+                                sOpt -> sOpt.get().getName()
+                        )
+                ));
 
         System.out.println("collect4 = " + collect4);
 
